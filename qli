@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+# SPDX-License-Identifier: BSD-2-Clause
+# Copyright (c) 2023, Mitja Felicijan <m@mitjafelicijan.com>
+
+# Inspired by Quantum Lorem Ipsum project by Neil Panchal
+# https://github.com/neilpanchal/quantum-lorem-ipsum
+
+# Curls the file with quantum lorem ipsum and selects one random paragraph and
+# outputs it to terminal.
+
+link="https://raw.githubusercontent.com/neilpanchal/quantum-lorem-ipsum/master/quantum-lorem-ipsum.txt"
+content=$(curl -s "$link")
+IFS=$'\n\n' paragraphs=($content)
+random_paragraph=${paragraphs[RANDOM % ${#paragraphs[@]}]}
+echo "$random_paragraph"
