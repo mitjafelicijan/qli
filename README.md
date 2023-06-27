@@ -1,8 +1,11 @@
 # Quantum Lorem Ipsum CLI
 
 Inspired by Quantum Lorem Ipsum project by [Neil
-Panchal](https://neil.computer/)
-https://github.com/neilpanchal/quantum-lorem-ipsum
+Panchal](https://neil.computer/).
+
+Check out his repository https://github.com/neilpanchal/quantum-lorem-ipsum.
+
+## What does it do?
 
 Curls the file with quantum lorem ipsum and selects one random paragraph and
 outputs it to terminal.
